@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(./tft.jpg);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+    font-weight: 900;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contents {
+    margin-top: 50px;
+    text-align: center;
+    width: 70%;
+}
+
+.active-tab {
+    background-color: rgba(255,255,255,0.5);
+    border-bottom: 2px solid white;
+}
+
+.hidden {
+    display: none;
+}
